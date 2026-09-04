@@ -1,0 +1,8 @@
+#Ignore temporary output files except the ones we must submit
+*.txt
+!git_log_lab*.txt
+!monitor_with_alerts.txt
+!log_summary.txt
+!daily_report_*.txt
+!final_report.txt
+!syshealth_log_excerpt.txt
