@@ -18,6 +18,14 @@ echo "Hostname with quotes \"$HOSTNAME\"" #always do this
 
 # Add a comment explaining the difference (required for marks):
 
+# --- System metrics collection ---
+UPTIME=$(uptime -p)
+DISK_USAGE=$(df -h / | tail -1)
+MEMORY_USAGE=$(free -h | awk '/Mem:/ {print $3 "/" $2}')
+PROCESS_COUNT=$(ps -e | wc -l)
+
+
+
 cat << EOF
 
 # COMMENT FOR GRADER:
